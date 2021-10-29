@@ -9,6 +9,7 @@ public class CheckLeapYear {
         System.out.println("Enter Any Year to check for Leap Year");
         int year=scanner.nextInt();
 
+        //Core logic
         if((year%4==0 && year%100!=0)|| year%400==0){
             System.out.println("The Given year "+year+" is a Leap year");
         }
