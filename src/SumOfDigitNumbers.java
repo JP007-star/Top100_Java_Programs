@@ -16,8 +16,8 @@ public class SumOfDigitNumbers {
         //Core Logic
         while(num!=0){
             lastDigit=num%10;
-            sum=sum+lastDigit;
-            num=num/10;
+            sum+=lastDigit;
+            num/=10;
         }
        System.out.println("The Sum of Given Digit of Number is:"+sum);
     }

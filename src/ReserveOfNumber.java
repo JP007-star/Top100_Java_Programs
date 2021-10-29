@@ -7,7 +7,7 @@ public class ReserveOfNumber {
         Scanner scanner=new Scanner(System.in);
 
         //Prompt a number form user
-        System.out.println("Enter a number");
+        System.out.println("Enter a number:");
         int num=scanner.nextInt();
 
         int lastDigit=0;
@@ -17,7 +17,7 @@ public class ReserveOfNumber {
         while(num!=0){
             lastDigit=num%10;
             string=string+Integer.toString(lastDigit);
-            num=num/10;
+            num/=10;
         }
         System.out.println("The Reverse of a Number is:"+string);
     }
