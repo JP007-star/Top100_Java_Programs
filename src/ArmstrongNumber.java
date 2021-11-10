@@ -9,13 +9,13 @@ public class ArmstrongNumber {
         System.out.println("Enter a number:");
         int num=scanner.nextInt();
 
-        int lastDigit=0;
+        int remainder=0;
         int sum=0;
         int temp=num;
         //Core Logic
         while(num!=0){
-            lastDigit=num%10;
-            sum=sum+(lastDigit*lastDigit*lastDigit);
+            remainder=num%10;
+            sum=sum+(remainder*remainder*remainder);
             num/=10;
         }
         if(temp==sum){
