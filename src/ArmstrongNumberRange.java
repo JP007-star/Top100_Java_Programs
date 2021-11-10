@@ -12,6 +12,7 @@ public class ArmstrongNumberRange {
         System.out.println("Enter the ending number:");
         int endNum=scanner.nextInt();
 
+        //Core Logic
         int remainder,sum,number,temp;
         for(int i=firstNum;i<=endNum;i++){
             number=i;
