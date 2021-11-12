@@ -5,7 +5,7 @@ public class CountVowelArray {
         //Scanner Obj Initialized
         Scanner scanner=new Scanner(System.in);
 
-        //prompt  2 numbers from user
+        //prompt  string  from user
         System.out.println("Enter a String:");
         String string=scanner.next();
         char charArray[]=string.toCharArray();
